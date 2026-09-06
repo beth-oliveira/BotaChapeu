@@ -1,41 +1,23 @@
-This is a Kotlin Multiplatform project targeting Web, Desktop (JVM).
+# Bota Chapéu
 
-* [/shared](./shared/src) is for code that will be shared across your Compose Multiplatform applications.
-  It contains several subfolders:
-    - [commonMain](./shared/src/commonMain/kotlin) is for code that’s common for all targets.
-    - Other folders are for Kotlin code that will be compiled for only the platform indicated in the folder name.
-      For example, if you want to use Apple’s CoreCrypto for the iOS part of your Kotlin app,
-      the [iosMain](./shared/src/iosMain/kotlin) folder would be the right place for such calls.
-      Similarly, if you want to edit the Desktop (JVM) specific part, the [jvmMain](./shared/src/jvmMain/kotlin)
-      folder is the appropriate location.
+## Informações importantes 
 
-### Running the apps
+Esse é um repositório de estudo da minha primeira vez usando o Kotlin Multiplatform para criar um aplicativo desktop (também disponível no web).
 
-Use the run configurations provided by the run widget in your IDE's toolbar. You can also use these commands and
-options:
+Eu ainda estou aprendendo, essa foi a minha primeira tentativa.
 
-- Desktop app:
-    - Hot reload: `./gradlew :desktopApp:hotRun --auto`
-    - Standard run: `./gradlew :desktopApp:run`
-- Web app:
-    - Wasm target (faster, modern browsers): `./gradlew :webApp:wasmJsBrowserDevelopmentRun`
-    - JS target (slower, supports older browsers): `./gradlew :webApp:jsBrowserDevelopmentRun`
+Esse repositório já possui o arquivo msi em desktopApp\build\compose\binaries\main\msi é só clicar duas vezes para instalar o projeto final para desktop no seu computador (pelo que eu entendi só funciona para windows, quem usa mac ou linux tem que usar o comando gradle clean package[o equivalente do seu sistema]).
 
-### Running tests
+Esse repositório usa imagens que não são de minha autoria (estábulo, cavalo e chapéus são originais do jogo StardewValley) usadas aqui somante para fins de estudo.
 
-Use the run button in your IDE's editor gutter, or run tests using Gradle tasks:
+Esse repositório não tem interesses comerciais.
 
-- Desktop tests: `./gradlew :shared:jvmTest`
-- Web tests:
-    - Wasm target: `./gradlew :shared:wasmJsTest`
-    - JS target: `./gradlew :shared:jsTest`
+## Como usar
 
----
+Rode pelo IntelliJ( o projeto funciona desktop e web) OU Baixe para desktop pelo msi (caminho no Informações importantes).
 
-Learn more about [Kotlin Multiplatform](https://www.jetbrains.com/help/kotlin-multiplatform-dev/get-started.html),
-[Compose Multiplatform](https://kotlinlang.org/compose-multiplatform/),
-[Kotlin/Wasm](https://kotl.in/wasm/)…
+Selecione um chapéu para vesti-lo.
 
-We would appreciate your feedback on Compose/Web and Kotlin/Wasm in the public Slack
-channel [#compose-web](https://slack-chats.kotlinlang.org/c/compose-web).
-If you face any issues, please report them on [YouTrack](https://youtrack.jetbrains.com/newIssue?project=CMP).
+Selecione o cavalo para remover o chapéu.
+
+![img.png](img.png)
